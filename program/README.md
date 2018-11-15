@@ -1,9 +1,9 @@
-int Relay= 4;
+int RELAY= 4;
 int PIR = 7;
 int value = 0;
 void setup()
 {
-pinMode(Relay,OUTPUT);
+pinMode(RELAY,OUTPUT);
 pinModed(PIR,INPUT);
 Serial.begin(9600);
 }
@@ -13,10 +13,10 @@ value  = digitalRead(PIR);
 Serial.begin(value);
 if(value==HIGH)
 {
-digitalWrite(Relay,HIGH);
+digitalWrite(RELAY,HIGH);
 }
 else
 {
-digitalWrite(Relay,LOW);
+digitalWrite(RELAY,LOW);
 }
 }
